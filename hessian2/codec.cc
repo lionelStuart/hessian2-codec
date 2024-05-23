@@ -32,7 +32,7 @@ void Encoder::encodeFixedUnListBegin(const std::string& type, uint32_t len) {
   if (len <= 7) {
     writer_->writeByte(static_cast<uint8_t>(0x78 + len));
   } else {
-    writer_->writeByte('0x58');
+    writer_->writeByte(static_cast<uint8_t>(0x58));
   }
 
   if (!type.empty()) {
