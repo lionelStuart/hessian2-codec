@@ -126,6 +126,8 @@ class Encoder {
   void encodeFixedListBegin(const std::string& type, uint32_t len);
   void encodeFixedListEnd();
 
+  void encodeFixedUnListBegin(const std::string& type, uint32_t len);
+
   void encodeMapBegin(const std::string& type);
   void encodeMapEnd();
 
